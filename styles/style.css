@@ -5,16 +5,26 @@ html {
   font-size: 16px;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
-body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
   margin: 0;
   padding: 0;
   font-weight: lighter;
 }
-
 
 /*  DO NOT REMOVE - Styling for the label showing the viewport width */
 .viewport-dimensions {
@@ -178,7 +188,7 @@ header {
 
 /* Write your CSS below */
 
-@media screen and (width < 760px){
+@media screen and (width < 760px) {
   .navbar {
     flex-direction: column;
   }
@@ -202,5 +212,20 @@ header {
   .main-article .content {
     width: 100%;
     margin-top: 1rem;
+  }
+
+  .articles-container {
+    flex-direction: column;
+  }
+
+  .article {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (760px < width < 1000px) {
+  .navbar li {
+    width: 100%;
   }
 }
