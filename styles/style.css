@@ -228,4 +228,8 @@ header {
   .navbar li {
     width: 100%;
   }
+
+  .article {
+    width: 49%;
+  }
 }
