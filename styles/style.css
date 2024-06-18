@@ -185,6 +185,9 @@ header {
 .btn-blue {
   background-color: #007bff;
 }
+.nav-icon {
+  display: none;
+}
 
 /* Write your CSS below */
 
@@ -222,6 +225,9 @@ header {
     width: 100%;
     margin-bottom: 1rem;
   }
+  .nav-icon {
+    display: none;
+  }
 }
 
 @media screen and (760px < width < 1000px) {
@@ -231,5 +237,19 @@ header {
 
   .article {
     width: 49%;
+  }
+
+  .nav-icon {
+    display: none;
+  }
+}
+
+@media screen and (width < 480px) {
+  .navbar {
+    display: none;
+  }
+
+  .nav-icon {
+    display: inline-block;
   }
 }
